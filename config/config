@@ -1,5 +1,5 @@
 :site:
-  :host: localhost:7143
+  :host: localhost
   :domain: localhost
   :ssl: false
   # NOTE Once the secret is set, do not change it (keep a backup offsite)

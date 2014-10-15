@@ -6,8 +6,8 @@ FROM ubuntu
 MAINTAINER Carla Souza <contact@carlasouza.com>
 
 RUN apt-get update && apt-get install -y puppet
-ADD init.pp /tmp/init.pp
-RUN puppet apply /tmp/init.pp --trace
+ADD onetimesecret.pp /tmp/onetimesecret.pp
+RUN puppet apply /tmp/onetimesecret.pp --trace
 
 ADD config/config /etc/onetime/config
 ADD config/redis.conf /etc/onetime/redis.conf
