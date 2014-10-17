@@ -3,14 +3,14 @@ Launch [One-Time Secret](http://onetimesecret.com) as a Docker container
 ## Usage
 
 ```bash
-# docker run --name=onetimesecret -p 80:7143 carlasouza/onetimesecret
+$ sudo docker run --name=onetimesecret -p 80:7143 carlasouza/onetimesecret
 ```
 
 Or BIY (build it yourself)!
 
 ```bash
-# docker build . -t='my_onetimesecret'
-# docker run --name=onetimesecret -p 80:7143 -t my_onetimesecret
+$ sudo docker build . -t='my_onetimesecret'
+$ sudo docker run --name=onetimesecret -p 80:7143 -t my_onetimesecret
 ```
 
 Access it through your browser at `http://localhost`
